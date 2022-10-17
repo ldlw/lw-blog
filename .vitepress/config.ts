@@ -119,8 +119,8 @@ export default defineConfig({
           text: 'React',
           items: [
             {
-              text: 'React快速起步',
-              link: '/react/'
+              text: '对useMemo的理解',
+              link: '/react/useMemo'
             }
           ],
         },
