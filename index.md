@@ -15,7 +15,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /guide/
+      link: /js/
     # - theme: alt
     #   text: 特点
     #   link: /guide/features

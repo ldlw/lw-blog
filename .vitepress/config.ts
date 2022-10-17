@@ -79,20 +79,17 @@ export default defineConfig({
     },
 
     nav: [
-      { text: '指南', link: '/guide/' },
+      { text: 'vue', link: '/Vue/' },
+      { text: 'react', link: '/React/' },
       { text: 'API', link: '/api/' },
       { text: '配置', link: '/config/' },
       {
         text: `v${version}`,
         items: [
           {
-            text: '版本发布',
-            link: releases,
-          },
-          {
-            text: '社区指南',
-            link: contributing,
-          },
+            text: 'Github',
+            link: github,
+          }
         ],
       },
     ],
@@ -101,15 +98,29 @@ export default defineConfig({
       // TODO: bring sidebar of apis and config back
       '/': [
         {
-          text: '指南',
+          text: 'JavaScript',
           items: [
             {
-              text: '简介',
-              link: '/guide/why',
-            },
+              text: 'Js快速起步',
+              link: '/js/'
+            }
+          ],
+        },
+        {
+          text: 'Vue',
+          items: [
             {
-              text: '快速起步',
-              link: '/guide/',
+              text: 'Vue快速起步',
+              link: '/vue/'
+            }
+          ],
+        },
+        {
+          text: 'React',
+          items: [
+            {
+              text: 'React快速起步',
+              link: '/react/'
             }
           ],
         },

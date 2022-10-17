@@ -6,4 +6,4 @@ title: Getting Started | Guide
 
 ## 总览
 
-这里是指南的快速起步页面
+vue起步
