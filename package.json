@@ -1,0 +1,24 @@
+{
+  "name": "Vitepress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs --port 5500",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.16",
+    "vue": "^3.2.39"
+  },
+  "dependencies": {
+    "vitepress-theme-demoblock": "^1.4.2"
+  }
+}
