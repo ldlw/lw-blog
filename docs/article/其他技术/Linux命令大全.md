@@ -2,7 +2,7 @@
 head:
   - - meta
     - name: description
-      content: Linux 常用命令
+      content: Linux 常用命令111
 
   - - meta
     - name: keywords
@@ -12,7 +12,7 @@ head:
     - src: https://vitepress-source.oss-cn-beijing.aliyuncs.com/statistics.js
 ---
 
-# Linux 常用命令
+# Linux 常用命令222
 
 ## 前言
 
