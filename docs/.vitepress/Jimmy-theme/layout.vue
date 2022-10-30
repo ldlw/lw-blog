@@ -6,7 +6,6 @@
 </template>
 
 <script setup>
-alert(111)
 import { onMounted } from 'vue'
 
 onMounted(() => {
