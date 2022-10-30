@@ -35,18 +35,37 @@ jobs:
         run: yarn build
 
       # 上传到阿里云
-      - name: 发布到阿里云
-        uses: easingthemes/ssh-deploy@v3.0.1
-        env:
-          # 私钥
-          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-          # SCP参数
-          ARGS: '-avzr --delete'
-          # 源目录
+      # - name: 发布到阿里云
+      #   uses: easingthemes/ssh-deploy@v3.0.1
+      #   env:
+      #     # 私钥
+      #     SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+      #     # SCP参数
+      #     ARGS: '-avzr --delete'
+      #     # 源目录
+      #     SOURCE: 'docs/.vitepress/dist'
+      #     # 服务器ip
+      #     REMOTE_HOST: '121.37.27.42'
+      #     # 用户
+      #     REMOTE_USER: 'root'
+      #     # 目标地址
+      #     TARGET: '/www/wwwroot/blog.ldlw.site'
+
+      上传到华为云
+      - name: 发布到华为云
+        uses: hengkx/ssh-deploy@v1.0.1
+        with:
+          # remote host
+          HOST: '121.37.27.42'
+          # username
+          USERNAME: 'root'
+          # password
+          PASSWORD: ${{ secrets.PRIVATE_PASS }}
+          # port
+          PORT: # optional, default is 22
+          # local path
           SOURCE: 'docs/.vitepress/dist'
-          # 服务器ip
-          REMOTE_HOST: '121.37.27.42'
-          # 用户
-          REMOTE_USER: 'root'
-          # 目标地址
+          # remote target
           TARGET: '/www/wwwroot/blog.ldlw.site'
+          # upload success execute command
+          AFTER_COMMAND: # optional
