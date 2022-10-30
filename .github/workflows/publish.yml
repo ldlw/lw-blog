@@ -21,7 +21,7 @@ jobs:
         # 使用action库  actions/setup-node安装node
         uses: actions/setup-node@v3.5.1
         with:
-          node-version: 16.x
+          node-version: 14.19.3
 
       - name: 安装yarn
         run: npm install -g yarn
