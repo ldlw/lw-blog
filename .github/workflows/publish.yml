@@ -51,7 +51,7 @@ jobs:
       #     # 目标地址
       #     TARGET: '/www/wwwroot/blog.ldlw.site'
 
-      上传到华为云
+      #上传到华为云
       - name: 发布到华为云
         uses: hengkx/ssh-deploy@v1.0.1
         with:
