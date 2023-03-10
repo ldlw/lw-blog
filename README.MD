@@ -20,3 +20,4 @@ hello 你们好，这个网站是记录我们开发生涯中遇到一系列有�
 - [github](https://github.com/ldlw)
 - [博客网](https://github.com/ldlw/blog)
 - [掘金主页](https://juejin.cn/user/166781499481837)
+- [CSDN](https://blog.csdn.net/weixin_42277473)
